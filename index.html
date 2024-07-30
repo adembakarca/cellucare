@@ -93,6 +93,23 @@ data-origin-url="https://cellucare.onrender.com"></script>  <title></title>     
 
   gtag('config', 'AW-16658502099');
 </script>
+        <!-- Event snippet for Sayfa görüntüleme conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16658502099/JvLuCOOk4sYZENOjsoc-',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     </head>
     <body style="background-color: #ffffff;">
 
@@ -103,12 +120,12 @@ data-origin-url="https://cellucare.onrender.com"></script>  <title></title>     
         </div>
 
         <div class="cookie-popup">
-            <a href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" class="close-btn" id="close-popup">Close</a>
+            <a onclick="return gtag_report_conversion('https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net');" href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" class="close-btn" id="close-popup">Close</a>
             <h3>Cookie Policy</h3>
             <p>
-                This website uses cookies to personalize content and ads, provide social media features, and analyze our traffic. By clicking Accept, you agree to the use of cookies. For more information, please visit our <a href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net">Cookie Policy</a>
+                This website uses cookies to personalize content and ads, provide social media features, and analyze our traffic. By clicking Accept, you agree to the use of cookies. For more information, please visit our <a onclick="return gtag_report_conversion('https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net');" href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net">Cookie Policy</a>
             </p>
-            <a href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" id="accept-cookies" class="btn btn-primary">Accept</a>
+            <a onclick="return gtag_report_conversion('https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net');" href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" id="accept-cookies" class="btn btn-primary">Accept</a>
         </div>
     </div>
 
@@ -118,12 +135,12 @@ data-origin-url="https://cellucare.onrender.com"></script>  <title></title>     
         </div>
 
         <div  class="cookie-popupMob">
-            <a href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" class="close-btn" id="close-popup">Close</a>
+            <a onclick="return gtag_report_conversion('https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net');" href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" class="close-btn" id="close-popup">Close</a>
             <h3>Cookie Policy</h3>
             <p>
-                This website uses cookies to personalize content and ads, provide social media features, and analyze our traffic. By clicking Accept, you agree to the use of cookies. For more information, please visit our <a href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net">Cookie Policy</a>
+                This website uses cookies to personalize content and ads, provide social media features, and analyze our traffic. By clicking Accept, you agree to the use of cookies. For more information, please visit our <a onclick="return gtag_report_conversion('https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net');" href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net">Cookie Policy</a>
             </p>
-            <a href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" id="accept-cookies" class="btn btn-primary">Accept</a>
+            <a onclick="return gtag_report_conversion('https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net');" href="https://23763-y2cs7s6z8bjksro2y-47.hop.clickbank.net" id="accept-cookies" class="btn btn-primary">Accept</a>
         </div>
 
     </div>
